@@ -21,6 +21,11 @@ class Berita extends CI_Controller {
         }
         $this->load->view("form_berita");
     }
+    function tampil(){
+        $data["berita"] = $this->m_berita->tampil();
+        $this->load->view("tampil_berita",$data);
+        
+    }
 
 }
 ?>
