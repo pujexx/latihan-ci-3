@@ -18,6 +18,7 @@ class Berita extends CI_Controller {
              "tanggal" => date('Y-m-d')
             );
         $this->m_berita->save($save);
+        redirect("berita/tampil");
         }
         $this->load->view("form_berita");
     }
